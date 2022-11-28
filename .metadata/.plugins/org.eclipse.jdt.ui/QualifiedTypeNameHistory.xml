@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="soru2.CustomStringTR"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="soru3.Hayvan"/>
     <fullyQualifiedTypeName name="soru3.MemeliHayvan"/>
     <fullyQualifiedTypeName name="soru3.Kertenkele"/>
@@ -14,5 +13,8 @@
     <fullyQualifiedTypeName name="soru4.Yolcu"/>
     <fullyQualifiedTypeName name="soru4.BusinessYolcu"/>
     <fullyQualifiedTypeName name="soru4.FirmaAdi"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
