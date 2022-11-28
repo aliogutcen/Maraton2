@@ -1,0 +1,76 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class BusinessYolcu extends Yolcu {
+
+
+private final int BUSINNESFIYAT=200;
+private int BUSINESSVIPFIYAT=150;
+private HashMap<String, Integer> biletlerBusiness ;
+
+
+
+public BusinessYolcu(int id, String adSoyad) {
+	super(id, adSoyad);
+
+}
+
+
+
+
+
+public int getBUSINNESFIYAT() {
+	return BUSINNESFIYAT;
+}
+
+
+
+
+
+public void setBUSINESSVIPFIYAT(int bUSINESSVIPFIYAT) {
+	BUSINESSVIPFIYAT = bUSINESSVIPFIYAT;
+}
+
+
+
+
+
+@Override
+public void yolcuBilgileriniGetir() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+
+
+@Override
+public void checkInYap() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+
+
+@Override
+public void ucagaBin() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}

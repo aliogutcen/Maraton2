@@ -1,0 +1,24 @@
+package soru4;
+
+public class Main {
+public static void main(String[] args) {
+	
+	Yolcu yolcu = new BusinessYolcu(7775,"Mert Kaya",false);
+	Yolcu yolcu2 = new EkonomiYolcu(889,"Ahmet Demir");
+	Yolcu yolcu3 = new BusinessYolcu(555,"Aslı Bahar",true);
+	
+	
+	System.out.println("*********** Businnes VIP Yolcu **********");
+	yolcu3.biletAl(FirmaAdi.ADJ);
+	yolcu3.biletAl(FirmaAdi.THY);
+	yolcu.biletAl(FirmaAdi.ADJ);
+	System.out.println("***");
+	
+	yolcu3.ucagaBin();
+	yolcu3.ucagaBin();
+	
+	
+}
+
+	
+}

@@ -1,0 +1,12 @@
+package soru2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomStringTR customStr = new CustomStringTR("Merhaba");
+		
+		customStr.uzunluk();
+
+	}
+
+}

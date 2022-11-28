@@ -1,0 +1,90 @@
+package soru3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class HayvanatBahcesi {
+
+	private Aslan aslan;
+	private Yilan yilan;
+	private Maymun maymun;
+	private Kertenkele kertenkele;
+	private MemeliHayvan m;
+	private Surungen s;
+	private Hayvan h;
+
+	public static List<Hayvan> hayvanlar = new ArrayList<>();
+	public static HashMap<Surungen, String> hayvanlar1= new HashMap<>();
+
+	public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+		for (int i = 0; i < hayvanlar.size(); i++) {
+			if (hayvanlar.get(i).getAd() == m.getAd()) {
+				System.out.println("Bu isimde bir hayvan vardır ");
+				return;
+			}
+		}
+		hayvanlar.add(m);
+		System.out.println("Hayvanat bahçesine " + m.getAd() + " eklendi.");
+
+	}
+
+	public void bahceyeSurungenEkle(Surungen s) {
+
+		hayvanlar1.put(s, "sürüngen");
+		
+		for (int i = 0; i < hayvanlar.size(); i++) {
+			if (hayvanlar.get(i).getAd() == s.getAd()) {
+				System.out.println("Bu isimde bir hayvan vardır ");
+				return;
+			}
+		}
+		hayvanlar.add(s);
+		System.out.println("Hayvanat bahçesine " + s.getAd() + " eklendi.");
+
+	}
+
+	public void hayvanSesCikarsin(Hayvan h) {
+		h.sesCikar();
+	}
+
+	public void hayvaninCinsiniBul(String isim) {
+
+		if (isim.contains(h.getAd())) {
+			System.out.println("Hayvanın cinsi " + h.getAd());
+		} else {
+			System.out.println(isim + "isimli hayvan yoktur..");
+		}
+
+	}
+
+	public void hayvaninBilgileriniYazdir(String hayvanAdi) {
+		
+		
+		for (int i = 0; i < hayvanlar.size(); i++) {
+			if (hayvanlar.get(i).getAd().equalsIgnoreCase(hayvanAdi)) {
+				System.out.println(hayvanlar.get(i).toString());
+				return;
+			}
+		}
+		System.out.println(hayvanAdi + " isminde bir hayvan Hayvanat Bahçesinde yok");
+
+	}
+
+	public void hayvaniHareketEttir(String hayvanAdi) {
+				if(hayvanlar1.containsKey(hayvanAdi)) {
+					System.err.println(hayvanA);
+				}
+			
+					
+			
+		
+		
+				
+	
+	}
+
+}

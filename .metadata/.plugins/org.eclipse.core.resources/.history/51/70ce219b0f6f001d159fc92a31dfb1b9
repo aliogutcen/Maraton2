@@ -1,0 +1,56 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class BusinessYolcu extends Yolcu {
+
+private final int BUSINNESFIYAT=200;
+private int BUSINESSVIPFIYAT=150;
+private HashMap<String, Integer> biletlerBusiness ;
+
+
+public BusinessYolcu(int id, String adSoyad, int koltukNo, String checkin, int bUSINNESFIYAT, int bUSINESSVIPFIYAT,
+		HashMap<String, Integer> biletler) {
+	super(id, adSoyad, koltukNo, checkin);
+	BUSINNESFIYAT = bUSINNESFIYAT;
+	BUSINESSVIPFIYAT = bUSINESSVIPFIYAT;
+	this.biletlerBusiness= biletlerBusiness;
+}
+
+
+public int getBUSINNESFIYAT() {
+	return BUSINNESFIYAT;
+}
+
+
+public void setBUSINNESFIYAT(int bUSINNESFIYAT) {
+	BUSINNESFIYAT = bUSINNESFIYAT;
+}
+
+
+public int getBUSINESSVIPFIYAT() {
+	return BUSINESSVIPFIYAT;
+}
+
+
+public void setBUSINESSVIPFIYAT(int bUSINESSVIPFIYAT) {
+	BUSINESSVIPFIYAT = bUSINESSVIPFIYAT;
+}
+
+
+public HashMap<String, Integer> getBiletler() {
+	return biletler;
+}
+
+
+public void setBiletler(HashMap<String, Integer> biletler) {
+	this.biletler = biletler;
+}
+	
+
+
+
+
+
+
+}

@@ -1,0 +1,73 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class EkonomiYolcu extends Yolcu{
+	
+	private final int EKONOMIFIYAT=100;
+	
+	private HashMap<String, Integer> biletlerEkonomi = new HashMap<>() ;
+
+	public EkonomiYolcu(int id, String adSoyad,boolean checkin) {
+		super(id, adSoyad,checkin);
+		
+	}
+	
+	
+	
+	
+
+	public HashMap<String, Integer> getBiletlerEkonomi() {
+		return biletlerEkonomi;
+	}
+
+
+
+
+
+	public void setBiletlerEkonomi(HashMap<String, Integer> biletlerEkonomi) {
+		this.biletlerEkonomi = biletlerEkonomi;
+	}
+
+
+
+
+
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+
+
+
+
+	@Override
+	public void yolcuBilgileriniGetir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void biletAl(FirmaAdi firmaAdi) {
+		biletlerEkonomi.put(firmaAdi.name(), getBASEFIYAT()+getEKONOMIFIYAT());
+		System.out.println(getAdSoyad()+"isimli yolcu"+getFirmaAdi()+" için VİP bilet almıştır."+biletlerEkonomi);
+	}
+
+	@Override
+	public void checkInYap() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ucagaBin() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+
+
+
+}

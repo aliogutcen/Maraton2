@@ -1,0 +1,85 @@
+package soru4;
+
+import java.util.Random;
+
+public abstract class Yolcu {
+	static Random r= new Random();
+	private int id;
+	private String adSoyad;
+	private int koltukNo;
+	private String checkin;
+	private final int BASEFIYAT=100;
+	
+	
+	
+	
+
+
+	public Yolcu(int id, String adSoyad, String checkin) {
+		super();
+		this.id = id;
+		this.adSoyad = adSoyad;
+		this.koltukNo = r.nextInt(0,500);
+		
+		this.checkin = checkin;
+		
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+	public String getAdSoyad() {
+		return adSoyad;
+	}
+
+
+
+	public void setAdSoyad(String adSoyad) {
+		this.adSoyad = adSoyad;
+	}
+
+
+
+	public int getKoltukNo() {
+		return koltukNo;
+	}
+
+
+
+	public void setKoltukNo(int koltukNo) {
+		this.koltukNo = koltukNo;
+	}
+
+
+
+	public String getCheckin() {
+		return checkin;
+	}
+
+
+
+	public void setCheckin(String checkin) {
+		this.checkin = checkin;
+	}
+
+
+
+	public int getBASEFIYAT() {
+		return BASEFIYAT;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package soru3;
+
+public class Kertenkele extends Surungen{
+
+	public Kertenkele(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi);
+		
+	}
+	
+	
+
+}

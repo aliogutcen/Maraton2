@@ -1,0 +1,100 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class BusinessYolcu extends Yolcu {
+
+	private final int BUSINNESFIYAT = 200;
+	private final int BUSINESSVIPFIYAT = 150;
+	private boolean vipMi;
+	private HashMap<String, Integer> biletlerBusiness =new HashMap<>();
+
+	public BusinessYolcu(int id, String adSoyad, boolean vipMi) {
+		super(id, adSoyad);
+		this.vipMi=vipMi;
+
+	}
+
+	
+	
+
+	public boolean isVipMi() {
+		return vipMi;
+	}
+
+
+
+
+	public void setVipMi(boolean vipMi) {
+		this.vipMi = vipMi;
+	}
+
+
+
+
+	public int getBUSINNESFIYAT() {
+		return BUSINNESFIYAT;
+	}
+
+
+
+
+	public int getBUSINESSVIPFIYAT() {
+		return BUSINESSVIPFIYAT;
+	}
+
+
+
+
+	public HashMap<String, Integer> getBiletlerBusiness() {
+		return biletlerBusiness;
+	}
+
+
+
+
+	public void setBiletlerBusiness(HashMap<String, Integer> biletlerBusiness) {
+		this.biletlerBusiness = biletlerBusiness;
+	}
+
+
+
+
+	@Override
+	public void yolcuBilgileriniGetir() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkInYap() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void ucagaBin() {
+		if(isCheckin()==true) {
+			
+			
+	
+		}else
+			System.out.println("İlk önce check-in yaptırınız");
+
+	}
+
+	@Override
+	public void biletAl(FirmaAdi firmaAdi) {
+		if (vipMi == true) {
+			int biletFiyati= getBASEFIYAT() + getBUSINNESFIYAT() + getBUSINESSVIPFIYAT();
+			biletlerBusiness.put(firmaAdi.name(), biletFiyati);
+			System.out.println(getAdSoyad()+"isimli yolcu"+getFirmaAdi()+" için VİP bilet almıştır."+biletlerBusiness);
+	
+		} else
+			
+			biletlerBusiness.put(firmaAdi.name(), getBASEFIYAT() + getBUSINNESFIYAT());
+			System.out.println(getAdSoyad()+"isimli yolcu"+getFirmaAdi()+" için VİP bilet almıştır."+biletlerBusiness);
+	
+	}
+
+}

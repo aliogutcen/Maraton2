@@ -1,0 +1,33 @@
+package soru2;
+
+public class CustomStringTR {
+
+	private String word;
+
+	public CustomStringTR(String word) {
+		
+		this.word = word;
+	}
+
+	public String getWord() {
+		return word;
+	}
+
+	public void setWord(String word) {
+		this.word = word;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomStringTR [word=" + word + "]";
+	}
+	
+	
+	
+	
+	public void uzunluk() {
+		System.out.println("Kelime-Cümlenin uzunluğu = "+ this.word);
+	}
+	
+	
+}

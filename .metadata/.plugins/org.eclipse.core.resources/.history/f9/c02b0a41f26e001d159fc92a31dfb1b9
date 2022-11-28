@@ -1,0 +1,30 @@
+package soru2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomStringTR customStr = new CustomStringTR("Merhaba");
+		
+		
+		
+		//1.method
+		customStr.uzunluk();
+		//2.method
+		customStr.kelimeninHarfleriniKucult();
+		//3.Method
+		customStr.kelimeninHarfleriniBuyult();
+		//4.Method
+		customStr.harfDegistir();
+		//5.Method
+		customStr.bosMu();
+		//6.Method
+		customStr.ilkKarakteriniGetir();
+		//7.Method
+		customStr.sonKarakteriniGetir();
+		//8.Method
+		customStr.byteKodunuGetir();
+		//9.Method
+		customStr.butunKelimeyiCevir();
+	}
+
+}

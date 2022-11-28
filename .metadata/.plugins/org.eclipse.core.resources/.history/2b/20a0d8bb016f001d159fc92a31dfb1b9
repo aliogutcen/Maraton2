@@ -1,0 +1,87 @@
+package soru3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class HayvanatBahcesi {
+
+private Aslan aslan ;
+private Yilan yilan;
+private Maymun maymun;
+private Kertenkele kertenkele;
+private MemeliHayvan m;
+private Surungen s;
+private Hayvan h;
+
+
+public static List<Hayvan> hayvanlar = new ArrayList<>();
+public static Map<Hayvan, String> hayvanlar1 = new HashMap<>();
+
+public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+	if(hayvanlar.contains(m)) {
+		System.out.println(m+" hayvan var");
+	}
+	else
+		hayvanlar.add(m);
+	
+	
+	
+}
+public void bahceyeSurungenEkle(Surungen s) {
+	
+	if(hayvanlar.contains(s)) {
+		System.out.println(s+"isimli hayvan var");
+	}else
+		hayvanlar.add(s);
+	
+}
+
+
+public void hayvanSesCikarsin(Hayvan h) {
+	h.sesCikar();
+}
+
+public void hayvaninCinsiniBul(String isim) {
+	
+	if(isim.contains(h.getAd())) {
+		System.out.println("Hayvanın cinsi " +h.getAd());
+	}else {
+		System.out.println(isim+"isimli hayvan yoktur..");
+	}
+
+}
+
+
+public void hayvaninBilgileriniYazdir(String hayvanAdi) {
+	
+
+	for(int i =0 ; i<hayvanlar.size(); i++) {
+		
+		if(hayvanlar.get(i).getAd().equalsIgnoreCase(hayvanAdi)) {
+			System.out.println("Hayvan var");
+			break;
+		}else
+			System.out.println("Hayvan yok");
+		
+	}
+	
+	
+	
+	
+}
+
+public void  hayvaniHareketEttir(String hayvanAdi) {
+	
+	
+	
+	
+}
+
+
+
+
+
+	
+}

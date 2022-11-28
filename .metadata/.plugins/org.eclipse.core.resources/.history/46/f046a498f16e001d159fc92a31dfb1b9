@@ -1,0 +1,87 @@
+package soru2;
+
+import java.util.Scanner;
+
+public class CustomStringTR {
+
+	private String word;
+	static Scanner scanner = new Scanner(System.in);
+
+	public CustomStringTR(String word) {
+
+		this.word = word;
+	}
+
+	public String getWord() {
+		return word;
+	}
+
+	public void setWord(String word) {
+		this.word = word;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomStringTR [word=" + word + "]";
+	}
+
+	// Methodlar
+
+	// 1.method
+	public void uzunluk() {
+		System.out.println("Kelime-Cümlenin uzunluğu = " + this.word.length());
+	}
+
+	// 2.method
+	public void kelimeninHarfleriniKucult() {
+		System.out.println("Kelimenin bütün harfleri küçültülmüştür =" + this.word.toLowerCase());
+	}
+
+	// 3.method
+	public void kelimeninHarfleriniBuyult() {
+		System.out.println("Kelimenin bütün harfleri küçültülmüştür =" + this.word.toUpperCase());
+	}
+
+	// 4.method
+
+	public void harfDegistir() {
+
+		System.out.println("Değiştirmek istediğin harfi giriniz =");
+		String degistir = scanner.nextLine();
+		System.out.println("Ne ile değiştirmek istiyorsunuz= ");
+		String degisen = scanner.nextLine();
+
+		if (word.contains(degistir)) {
+			System.out.println("Değiştikten sonra kelimeniz= " + this.word.replace(degistir, degisen));
+		} else
+
+			System.err.println("Değiştirmek istediğiniz harf kelimede yok");
+
+	}
+	
+	//5.method
+	
+	public void bosMu() {
+		
+		System.out.println("İfade boş mu değil mi = " +this.word.isEmpty());
+	}
+	
+	//6.method
+	
+	public void ilkKarakteriniGetir() {
+		
+		System.out.println("Kelimenizin ilk karakteri = " +this.word.charAt(0));
+	}
+	
+	//7.Method
+	
+	public void sonKarakteriniGetir() {
+		System.out.println("Kelimenizin son harfi = " +this.word.charAt(word.length()-1));
+	}
+	
+	
+	
+	
+	
+	
+}

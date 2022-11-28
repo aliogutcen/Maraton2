@@ -1,0 +1,30 @@
+package soru3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HayvanatBahcesi hayvanatBahcesi = new HayvanatBahcesi();
+
+		Aslan aslan1 = new Aslan("Simba", 150, 200, true);
+		Yilan yilan1 = new Yilan("Terminatör",15,200,true);
+		Maymun maymun1 = new Maymun ("Çiko",25,100,false);
+		Kertenkele kertenkele1= new Kertenkele("Kermit",75,25,false);
+		
+		
+		hayvanatBahcesi.bahceyeMemeliHayvanEkle(aslan1);
+		hayvanatBahcesi.bahceyeSurungenEkle(yilan1);
+		hayvanatBahcesi.bahceyeMemeliHayvanEkle(new Aslan("Leo",120,140,true));
+		hayvanatBahcesi.bahceyeMemeliHayvanEkle(new Maymun("Çiko",45,50,false));
+		hayvanatBahcesi.bahceyeSurungenEkle(new Yilan("Cobra",35,200,true));
+		hayvanatBahcesi.bahceyeSurungenEkle(new Kertenkele("Kermit",2,35,false));
+		
+		
+		
+		hayvanatBahcesi.hayvanSesCikarsin(aslan1);
+		hayvanatBahcesi.hayvanSesCikarsin(yilan1);
+		
+		
+		
+	}
+
+}

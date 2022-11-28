@@ -1,0 +1,85 @@
+package soru3;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HayvanatBahcesi {
+
+private Aslan aslan ;
+private Yilan yilan;
+private Maymun maymun;
+private Kertenkele kertenkele;
+private MemeliHayvan m;
+private Surungen s;
+
+public static Map<Hayvan, String> hayvanlar = new HashMap<>();
+
+//Aslan ekle
+
+//Aslan aslan1 = new Aslan("Simba", 150, 200, true);
+//Yilan yilan1 = new Yilan("Terminatör",15,200,true);
+//Maymun maymun1 = new Maymun ("Çiko",25,100,false);
+//Kertenkele kertenkele1= new Kertenkele("Kermit",75,25,false);
+	
+
+public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+	if(hayvanlar.containsKey(m.getAd())) {
+		
+		System.out.println(m.getAd()+"isimli hayvan var");
+	}
+	else
+		hayvanlar.put(m,"Memeli Hayvan");
+	
+	
+	
+}
+public void bahceyeSurungenEkle(Surungen s) {
+	if(hayvanlar.containsKey(s.getAd())) {
+		System.out.println(s.getAd()+" isimli hayvan var");
+	}else
+		hayvanlar.put(s, "Sürüngen");
+	
+}
+
+
+public void hayvanSesCikarsin(Hayvan h) {
+	h.sesCikar();
+}
+
+public void hayvaninCinsiniBul(String isim) {
+	
+	if(isim.contains(h.getAd())) {
+		System.out.println("Hayvanın cinsi " +h.getAd());
+	}else {
+		System.out.println(isim+"isimli hayvan yoktur..");
+	}
+
+}
+
+
+public void hayvaninBilgileriniYazdir(String hayvanAdi) {
+	
+	if(m.getAd().equalsIgnoreCase(hayvanAdi) || s.getAd().equalsIgnoreCase(hayvanAdi)) {
+		System.out.println("Havvan var");
+	}
+	
+	
+	
+	
+	
+}
+
+
+public void  hayvaniHareketEttir(String hayvanAdi) {
+	
+	
+	
+	
+}
+
+
+
+
+
+	
+}

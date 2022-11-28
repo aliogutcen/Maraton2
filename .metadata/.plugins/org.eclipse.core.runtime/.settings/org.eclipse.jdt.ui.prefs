@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="soru2.CustomStringTR"><rhs name\="soru2.CustomStringTR"/></lhs><lhs name\="soru3.HayvanatBahcesi"><rhs name\="soru3.HayvanatBahcesi"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.AbstractMap"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.HashMap"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Enum"><rhs name\="soru4.FirmaAdi"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="soru4.FirmaAdi"/></lhs><lhs name\="soru4.FirmaAdi"><rhs name\="soru4.FirmaAdi"/></lhs></history>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,24 @@
+package soru3;
+
+public class Kertenkele extends Surungen{
+
+	public Kertenkele(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi);
+		
+	}
+
+	@Override
+	public void surun() {
+		System.out.println(getAd()+" isimli kertenkele sürünüyor.");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		System.out.println(getAd()+" isimli kertenkele ");
+		
+	}
+	
+	
+
+}

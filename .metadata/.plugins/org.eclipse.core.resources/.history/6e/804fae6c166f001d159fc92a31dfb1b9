@@ -1,0 +1,108 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class EkonomiYolcu extends Yolcu{
+	
+	private final int EKONOMIFIYAT=100;
+	private int sayac;
+	private HashMap<String, Integer> biletlerEkonomi = new HashMap<>() ;
+
+	public EkonomiYolcu(int id, String adSoyad,boolean checkin) {
+		super(id, adSoyad,checkin);
+		
+	}
+	
+	
+	
+	
+
+	public HashMap<String, Integer> getBiletlerEkonomi() {
+		return biletlerEkonomi;
+	}
+
+
+
+
+
+	public void setBiletlerEkonomi(HashMap<String, Integer> biletlerEkonomi) {
+		this.biletlerEkonomi = biletlerEkonomi;
+	}
+
+
+
+
+
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+
+
+
+
+	public int getSayac() {
+		return sayac;
+	}
+
+
+
+
+
+	public void setSayac(int sayac) {
+		this.sayac = sayac;
+	}
+
+
+
+
+
+	@Override
+	public void yolcuBilgileriniGetir() {
+		System.out.println("Yolcu bilgileri---> Business Yolcusu  " +getAdSoyad()+ " Biletleri= "+biletlerEkonomi);
+		
+	}
+
+	@Override
+	public void biletAl(FirmaAdi firmaAdi) {
+		biletlerEkonomi.put(firmaAdi.name(), getBASEFIYAT()+getEKONOMIFIYAT());
+		System.out.println(getAdSoyad()+"isimli yolcu"+getFirmaAdi()+" için Ekonomi bilet almıştır."+biletlerEkonomi);
+		if(biletlerEkonomi.containsKey(firmaAdi)) {
+			
+		}
+	}
+
+	@Override
+	public void checkInYap() {
+		if(isCheckin()==true) {
+			System.out.println("Daha önceden Check-In işlemi yapılmış. İyi yolculuklar dileriz");
+		}
+		else {
+			setCheckin(true);
+			System.out.println("Check-In işleminiz yapılmıştır.");
+		}
+		
+	}
+
+	@Override
+	public void ucagaBin() {
+		
+		if(getSayac()==0) {
+		
+		if(isCheckin()==true) {
+			System.out.println(getAdSoyad()+" "+getKoltukNo()+" Numaralı koltukta uçağa binebilirsiniz..");
+			setSayac(getSayac()+1);
+	
+		}else
+			System.out.println("İlk önce check-in yaptırınız");
+		
+	}else
+		System.out.println("Zaten uçaktasınız.");
+	}
+	
+	
+
+
+
+
+}

@@ -1,0 +1,91 @@
+package soru4;
+
+import java.util.HashMap;
+
+public class BusinessYolcu extends Yolcu {
+
+	private final int BUSINNESFIYAT = 200;
+	private final int BUSINESSVIPFIYAT = 150;
+	private boolean vipMi;
+	private HashMap<String, Integer> biletlerBusiness;
+
+	public BusinessYolcu(int id, String adSoyad, boolean vipMi) {
+		super(id, adSoyad);
+
+	}
+
+	
+	
+
+	public boolean isVipMi() {
+		return vipMi;
+	}
+
+
+
+
+	public void setVipMi(boolean vipMi) {
+		this.vipMi = vipMi;
+	}
+
+
+
+
+	public int getBUSINNESFIYAT() {
+		return BUSINNESFIYAT;
+	}
+
+
+
+
+	public int getBUSINESSVIPFIYAT() {
+		return BUSINESSVIPFIYAT;
+	}
+
+
+
+
+	public HashMap<String, Integer> getBiletlerBusiness() {
+		return biletlerBusiness;
+	}
+
+
+
+
+	public void setBiletlerBusiness(HashMap<String, Integer> biletlerBusiness) {
+		this.biletlerBusiness = biletlerBusiness;
+	}
+
+
+
+
+	@Override
+	public void yolcuBilgileriniGetir() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkInYap() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void ucagaBin() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void biletAl(FirmaAdi firmaAdi) {
+		setFirmaAdi(firmaAdi);
+		if (vipMi == true) {
+			int biletFiyati= getBASEFIYAT() + getBUSINNESFIYAT() + getBUSINESSVIPFIYAT();
+			biletlerBusiness.put(firmaAdi.name(), biletFiyati);
+		} else
+			biletlerBusiness.put(firmaAdi.name(), getBASEFIYAT() + getBUSINNESFIYAT());
+
+	}
+
+}

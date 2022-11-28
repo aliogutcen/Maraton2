@@ -1,0 +1,22 @@
+package soru3;
+
+public class Maymun extends MemeliHayvan{
+
+	public Maymun(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi);
+		
+	}
+
+	@Override
+	public void yuru() {
+			System.out.println(getAd()+" isimli maymun yürüyor..");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		System.out.println(getAd()+" isimli maymun ses çıkarıyor..");
+		
+	}
+
+}

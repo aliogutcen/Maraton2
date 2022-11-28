@@ -1,0 +1,29 @@
+package soru3;
+
+public class Aslan extends MemeliHayvan{
+
+	public Aslan(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi=true);
+	
+	}
+	
+	
+	
+
+	@Override
+	public void yuru() {
+		System.out.println();
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		System.out.println(getAd()+" isimli aslan kükrüyor");
+		
+	}
+
+	
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package soru3;
+
+public abstract class MemeliHayvan extends Hayvan {
+
+	public MemeliHayvan(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi);
+
+	}
+
+	public abstract void yuru();
+
+}
